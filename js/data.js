@@ -1,155 +1,104 @@
 // ------------------------------------------------------------------
-//  All portfolio content lives here. Replace the dummy data with your
-//  own and the whole site updates.
+//  All portfolio content lives here. Edit this file and the site updates.
 // ------------------------------------------------------------------
 
 export const profile = {
-  name: 'Alex Rivera',
-  initials: 'AR',
-  roles: ['Frontend Developer', 'Creative Coder', 'UI/UX Enthusiast', 'Three.js Tinkerer'],
-  tagline: 'I design and build playful, high-performance web experiences that people actually remember.',
+  name: 'Nazneen Rahman',
+  firstName: 'Nazneen',
+  lastName: 'Rahman',
+  role: 'Lead SQA Engineer',
+  headline: ['Quality isn’t an act,', 'it’s a', 'habit.'],
+  // Experience is counted live from this date.
+  careerStart: { year: 2019, month: 6 },
   available: true,
-  location: 'Remote · Worldwide',
-  email: 'hello@alexrivera.dev',
-  resume: '', // e.g. 'resume.pdf' (put the file in /public)
-  bio: [
-    "Hey! I'm Alex, a developer who lives right where design meets code. I turn bold ideas into fast, accessible and delightfully animated interfaces.",
-    'Over the past five years I have shipped products for startups and agencies, from e-commerce storefronts to real-time dashboards. Lately I have been obsessed with WebGL, motion design and making the web feel a little more alive.',
-    "When I'm not coding you'll find me sketching UI ideas, hunting for good coffee or losing at chess.",
+  location: 'Dhaka, Bangladesh',
+  linkedin: 'https://www.linkedin.com/in/rahmannazneen/',
+  email: '', // e.g. 'you@example.com' - shown only when filled in
+  resume: '', // put the PDF in /public and set e.g. 'Nazneen-Rahman-Resume.pdf'
+  summary:
+    'Certified Software Quality Assurance Engineer driving software quality through comprehensive test plans, Agile methodologies, automation and manual testing. Strong analytical and communication skills for seamless collaboration with developers and stakeholders.',
+  about: [
+    'I lead quality for a trading platform at Kona Software Lab, where I guide a team of SQA engineers from test planning through release.',
+    'I combine hands-on automation (Selenium, Java, TestNG), API and performance testing, and clear communication, so teams ship faster and with confidence.',
   ],
-  stats: [
-    { value: 5, suffix: '+', label: 'Years experience' },
-    { value: 40, suffix: '+', label: 'Projects shipped' },
-    { value: 25, suffix: '', label: 'Happy clients' },
-  ],
-  socials: [
-    { label: 'GitHub', url: 'https://github.com/' },
-    { label: 'LinkedIn', url: 'https://www.linkedin.com/' },
-    { label: 'X / Twitter', url: 'https://x.com/' },
-    { label: 'Dribbble', url: 'https://dribbble.com/' },
+  highlights: [
+    { value: 50, suffix: '%', label: 'Less testing time through Selenium automation' },
+    { value: 20, suffix: '%', label: 'Higher test coverage on critical flows' },
+    { value: 50, suffix: '+', label: 'Releases managed end to end' },
+    { value: 3, suffix: '', label: 'SQA engineers led' },
   ],
 };
 
-export const projects = [
-  {
-    title: 'Nebula Commerce',
-    category: 'E-commerce',
-    year: '2025',
-    description:
-      'A headless storefront with interactive 3D product previews, instant search and a checkout that converts 30% better than the old one.',
-    tech: ['Next.js', 'Three.js', 'Stripe', 'Tailwind'],
-    live: 'https://example.com',
-    repo: 'https://github.com/',
-    image: '',
-    colors: ['#ff4ecd', '#8b5cf6'],
-    featured: true,
-  },
-  {
-    title: 'Pulse Analytics',
-    category: 'Dashboard',
-    year: '2025',
-    description: 'Real-time analytics dashboard streaming thousands of events per second into smooth, animated charts.',
-    tech: ['React', 'D3.js', 'WebSockets'],
-    live: 'https://example.com',
-    repo: 'https://github.com/',
-    image: '',
-    colors: ['#3ef0ff', '#3b6cff'],
-  },
-  {
-    title: 'Chroma',
-    category: 'Tool',
-    year: '2024',
-    description: 'AI-assisted color palette generator with contrast checking and one-click export to CSS and Figma.',
-    tech: ['JavaScript', 'Canvas', 'OpenAI API'],
-    live: 'https://example.com',
-    repo: 'https://github.com/',
-    image: '',
-    colors: ['#ff9f43', '#ff4e6a'],
-  },
-  {
-    title: 'Wanderlust',
-    category: 'Mobile web',
-    year: '2024',
-    description: 'Offline-first travel journal PWA with interactive maps, photo stories and trip sharing.',
-    tech: ['Vue', 'Firebase', 'Mapbox'],
-    live: 'https://example.com',
-    repo: 'https://github.com/',
-    image: '',
-    colors: ['#b8ff5c', '#1fbf8f'],
-  },
-  {
-    title: 'Synthwave Player',
-    category: 'Creative',
-    year: '2023',
-    description: 'A music player that turns any track into a live, audio-reactive retro landscape.',
-    tech: ['Web Audio API', 'WebGL', 'GLSL'],
-    live: 'https://example.com',
-    repo: 'https://github.com/',
-    image: '',
-    colors: ['#8b5cf6', '#ff4ecd'],
-  },
-  {
-    title: 'TaskFlow',
-    category: 'SaaS',
-    year: '2023',
-    description: 'Collaborative Kanban board with real-time sync, drag and drop and keyboard-first workflows.',
-    tech: ['TypeScript', 'Node.js', 'PostgreSQL'],
-    live: 'https://example.com',
-    repo: 'https://github.com/',
-    image: '',
-    colors: ['#ffd93d', '#ff9f43'],
-  },
-];
-
 export const skills = [
-  {
-    title: 'Frontend',
-    blurb: 'Building fast, accessible interfaces.',
-    items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Vue'],
-  },
-  {
-    title: 'Creative',
-    blurb: 'Motion, 3D and everything that sparkles.',
-    items: ['Three.js', 'WebGL', 'GSAP', 'Framer Motion', 'Canvas', 'GLSL'],
-  },
-  {
-    title: 'Backend',
-    blurb: 'APIs and data that hold it all together.',
-    items: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Firebase', 'REST'],
-  },
-  {
-    title: 'Tools',
-    blurb: 'The everyday kit.',
-    items: ['Git', 'Figma', 'Vite', 'Docker', 'Jest', 'Vercel'],
-  },
+  { title: 'Automation', items: ['Selenium', 'Java', 'TestNG', 'Jenkins'] },
+  { title: 'API & Performance', items: ['Postman', 'RestAssured', 'JMeter', 'Elastic APM'] },
+  { title: 'Test Management', items: ['TestRail', 'Jira', 'Test Planning', 'Regression & Smoke'] },
+  { title: 'Collaboration', items: ['Git', 'GitLab', 'Confluence', 'Microsoft Teams'] },
+  { title: 'Dev Tools & Data', items: ['IntelliJ IDEA', 'DataGrip', 'MongoDB Compass', 'SQL'] },
+  { title: 'Architecture', items: ['Microservices', 'CI/CD', 'Agile / Scrum', 'Log Analysis'] },
 ];
 
 export const experience = [
   {
-    period: '2023 — Present',
-    role: 'Senior Frontend Developer',
-    org: 'Pixel & Co.',
-    description:
-      'Leading a team of four building interactive marketing sites and design systems for global brands. Cut average page load time by 45%.',
+    period: 'Apr 2023 — Present',
+    role: 'Sr. SQA Engineer · Team Lead',
+    org: 'Kona Software Lab Ltd.',
+    place: 'Dhaka, Bangladesh',
+    points: [
+      'Led a team of 3 SQA engineers in designing, developing and executing comprehensive test plans for a trading platform.',
+      'Automated critical tests with Selenium and Java, cutting testing time by 50% and raising test coverage by 20%.',
+      'Used SQL queries for data analysis to find discrepancies and edge cases.',
+      'Ran JMeter performance tests to analyse API responsiveness under high-volume trading simulations.',
+      'Used Elastic APM to pinpoint performance bottlenecks and errors.',
+      'Implemented CI/CD pipelines to automate testing and improve deployment efficiency.',
+    ],
   },
   {
-    period: '2021 — 2023',
-    role: 'Frontend Developer',
-    org: 'Brightwave Studio',
-    description:
-      'Built award-nominated campaign sites with WebGL and scroll-driven storytelling. Introduced a component library used across 20+ projects.',
+    period: 'Apr 2022 — Mar 2023',
+    role: 'SQA Engineer',
+    org: 'Kona Software Lab Ltd.',
+    place: 'Dhaka, Bangladesh',
+    points: [
+      'Identified around 10 critical defects per sprint and tracked bugs and improvements in Jira.',
+      'Took an active part in sprint planning, stand-ups and retrospectives.',
+      'Drove test cycle completion with sanity, smoke, regression and acceptance testing.',
+      'Tested backend services with Postman for functionality and security.',
+      'Analysed server logs to deep-dive into defects.',
+      'Partnered with developers on TestRail, boosting product quality by 25%.',
+    ],
   },
   {
-    period: '2019 — 2021',
-    role: 'Junior Web Developer',
-    org: 'Launchpad Labs',
-    description: 'Shipped responsive web apps for early-stage startups and learned to love clean, tested code.',
+    period: 'Jun 2019 — Mar 2022',
+    role: 'SQA Engineer',
+    org: 'Fronture Technologies',
+    place: 'Dhaka, Bangladesh',
+    points: [
+      'Managed test cycles for 50+ releases across all Quickly Services products, ensuring timely delivery and high quality.',
+      'Improved QA pipeline efficiency for in-house and client projects, including WhatsForDinner, through restructuring.',
+      'Championed quality delivery with rigorous testing and continuous regression cycles.',
+    ],
   },
-  {
-    period: '2015 — 2019',
-    role: 'BSc in Computer Science',
-    org: 'State University',
-    description: 'Focused on human-computer interaction and computer graphics. Graduated with honours.',
-    type: 'education',
-  },
+];
+
+export const education = {
+  school: 'American International University-Bangladesh',
+  degree: 'B.Sc., Computer Science & Engineering',
+  detail: 'Apr 2019 · Dhaka, Bangladesh · CGPA 3.66 / 4.00',
+};
+
+export const certification = {
+  title: 'ISTQB® Certified Tester Foundation Level (CTFL)',
+  issuer: 'International Software Testing Qualifications Board',
+  detail: 'Issued Aug 2024',
+  url: 'https://rb.gy/9f66ld',
+};
+
+// Lines for the animated test-report card in the hero.
+export const testReport = [
+  ['pass', 'Test strategy & planning'],
+  ['pass', 'Automation · Selenium · TestNG'],
+  ['pass', 'API & performance · Postman · JMeter'],
+  ['pass', 'CI/CD quality gates'],
+  ['pass', 'Leading & mentoring QA team'],
+  ['warn', 'Coffee level low'],
 ];
